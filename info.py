@@ -26,10 +26,10 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', ))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER',))
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/2e392393da1496018568e.jpg')).split() #SAMPLE PIC
-NOR_IMG = environ.get("NOR_IMG", "")
-MELCOW_VID = environ.get("MELCOW_VID", "")
-SPELL_IMG = environ.get("SPELL_IMG", "")
+PICS = (environ.get('PICS', 'https://telegra.ph/file/15b9dbe647da91ee0bd6b.jpg')).split() #SAMPLE PIC
+NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/15b9dbe647da91ee0bd6b.jpg")
+MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/zenupdatess")
+SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/15b9dbe647da91ee0bd6b.jpg")
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
